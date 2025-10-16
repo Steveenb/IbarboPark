@@ -44,10 +44,17 @@
 
             <!-- TOUR VISIT DROPDOWN -->
 <li class="relative" x-data="{ open: false }">
-  <div @mouseenter="open = true" @mouseleave="open = false">
-    <a class="flex items-center space-x-2 text-gray-700 hover:text-chocklate border-b-2 border-transparent hover:border-chocklate pb-1 cursor-pointer">
+  <div 
+    @mouseenter="open = true" 
+    @mouseleave="open = false" 
+    class="group"
+  >
+    <!-- Tombol utama -->
+    <a 
+      class="flex items-center space-x-2 text-gray-700 hover:text-chocklate border-b-2 border-transparent group-hover:border-chocklate pb-1 transition-colors duration-200 cursor-pointer font-medium"
+    >
       <span>Tour Visit</span>
-      <svg class="w-3 h-3 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-4 h-4 text-gray-500 group-hover:text-chocklate transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </a>
@@ -61,22 +68,24 @@
       x-transition:leave="transition ease-in duration-150"
       x-transition:leave-start="transform scale-y-100 opacity-100"
       x-transition:leave-end="transform scale-y-0 opacity-0"
-      class="absolute top-full left-1/2 transform -translate-x-1/2 mt-3 w-[600px] bg-white rounded shadow-lg z-20 p-6 origin-top"
+      class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 w-[650px] bg-white border border-gray-100 rounded-2xl shadow-xl z-30 p-6 origin-top"
     >
+      <h3 class="text-lg font-semibold text-chocklate mb-4 text-center">Explore Our Attractions</h3>
+      
       <div class="grid grid-cols-5 gap-4 text-center">
-        <a href="#" class="block py-3 rounded-lg text-gray-500 hover:bg-yellow-100 hover:text-chocklate font-semibold transition">
+        <a href="#" class="block py-3 rounded-xl text-gray-600 hover:bg-green-400 hover:text-chocklate font-semibold transition-all duration-200 shadow-sm hover:shadow-md">
           Plaza
         </a>
-        <a href="#" class="block py-3 rounded-lg text-gray-500 hover:bg-yellow-100 hover:text-chocklate font-semibold transition">
+        <a href="#" class="block py-3 rounded-xl text-gray-600 hover:bg-green-400 hover:text-chocklate font-semibold transition-all duration-200 shadow-sm hover:shadow-md">
           Aviary
         </a>
-        <a href="#" class="block py-3 rounded-lg text-gray-500 hover:bg-yellow-100 hover:text-chocklate font-semibold transition">
+        <a href="#" class="block py-3 rounded-xl text-gray-600 hover:bg-green-400 hover:text-chocklate font-semibold transition-all duration-200 shadow-sm hover:shadow-md">
           Ibarbo Fun Town
         </a>
-        <a href="#" class="block py-3 rounded-lg text-gray-500 hover:bg-yellow-100 hover:text-chocklate font-semibold transition">
+        <a href="#" class="block py-3 rounded-xl text-gray-600 hover:bg-green-400 hover:text-chocklate font-semibold transition-all duration-200 shadow-sm hover:shadow-md">
           Splash World
         </a>
-        <a href="#" class="block py-3 rounded-lg text-gray-500 hover:bg-yellow-100 hover:text-chocklate font-semibold transition">
+        <a href="#" class="block py-3 rounded-xl text-gray-600 hover:bg-green-400 hover:text-chocklate font-semibold transition-all duration-200 shadow-sm hover:shadow-md">
           Other Area
         </a>
       </div>
